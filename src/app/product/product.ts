@@ -1,6 +1,6 @@
 export class Product {
 
-    id: number;
+    id!: number;
     brand: string;
     created_on: Date;
     description: string;
@@ -16,7 +16,6 @@ export class Product {
     city_id: number | undefined;
 
     constructor(
-      id: number,
       brand: string,
       created_on: Date,
       description: string,
@@ -33,7 +32,6 @@ export class Product {
 
 
       ){
-        this.id = id;
         this.brand = brand;
         this.created_on = created_on;
         this.description = description;

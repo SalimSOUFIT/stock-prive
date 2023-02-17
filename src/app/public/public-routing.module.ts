@@ -1,17 +1,23 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { PlayoutComponent } from './playout/playout.component';
+import { ProductListComponent } from '../product/product-list/product-list.component';
 
 
 const routes: Routes = [
+    {path: '', component: PlayoutComponent, children: [
+    { path: 'home', component: HomeComponent },
+    {path: 'products', component: ProductListComponent}
 
-  { path: 'home', component: HomeComponent }
+  ]}
+
 
 ];
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes)],
+    RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
 export class PublicRoutingModule { }
