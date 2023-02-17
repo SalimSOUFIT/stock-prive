@@ -5,6 +5,16 @@
 .navbar-brand {
   color: white; /* Remplacez "black" par la couleur de votre choix */
 }
-.nav-link {
-  color: white; /* Remplacez "black" par la couleur de votre choix */
+
+.my-title .navbar-brand{
+  font-size: 10 px;
+}
+
+.sub-title{
+  margin-top: 15px; margin-left: 30px;font-size: 20px;
+}
+
+.form-search-control {
+  width: 700px;
+  margin-top: 15px;
 }
