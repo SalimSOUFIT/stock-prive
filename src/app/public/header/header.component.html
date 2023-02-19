@@ -24,9 +24,9 @@
       </div>
       <div class="collapse navbar-collapse" id="navbarSupportedContent" >
         <form class="d-flex form-search-control" role="search">
-          <input class="form-control me-2" type="search" placeholder="Essayez iPhone 11,MacBook, revendre..." aria-label="Search"
+          <input class="form-control me-2" type="search"  placeholder="Essayez iPhone 11,MacBook, revendre..." aria-label="Search"
           >
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <button class="btn" type="submit" style="color: #fa711c; border-color: #fa711c;">Search</button>
         </form>
 
       </div>
@@ -63,9 +63,9 @@
     <div class="container-fluid">
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-        <ul *ngFor="let categorie for categorieList" class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" (click)="goToHome()"></a>
+        <ul  class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li *ngFor="let categorie for categorieList" class="nav-item">
+            <a class="nav-link" aria-current="page" (click)="goToHome()">{{categorie.name}}</a>
           </li>
         </ul>
 

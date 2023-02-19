@@ -10,7 +10,9 @@ import { Categorie } from './categorie';
 })
 export class ProductService {
 
+
   private apiUrl = 'http://localhost:8890/product/all'
+
 
   constructor(private http: HttpClient) { }
 
@@ -25,7 +27,11 @@ getProductList(): Observable<Product[]> {
 }
 
 getCategorieList(): Observable<Categorie[]> {
-  return this.http.get<Categorie[]>('http://localhost:8890/sub-cat-to-json').pipe(
+  const httpOptions = {
+    headers: new  HttpHeaders({ 'Content-Type': 'application/json' })
+  };
+
+  return this.http.get<Categorie[]>('http://localhost:8890/product/sub-cat-to-json', httpOptions).pipe(
     tap((response) => console.table(response)),
     catchError((error) => {
       console.error(error);
