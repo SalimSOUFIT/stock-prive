@@ -1,14 +1,16 @@
+import { CATEGORIES } from './../../product/moc-category-list';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ProductService } from 'src/app/product/product.service';
-import { Categorie } from '../../product/categorie';
+import Swiper from 'swiper';
+import { Category } from '../../product/category';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit{
-    categorieList: Categorie[] | undefined;
+  categoryList: Category[] = CATEGORIES;
     constructor(
       private router: Router,
       private productService: ProductService
@@ -23,9 +25,26 @@ export class HeaderComponent implements OnInit{
     }
 
     ngOnInit(){
-      this.productService.getCategorieList()
-        .subscribe(categorieList => this.categorieList = categorieList)
+
+            // this.productService.getCategoryList()
+      //   .subscribe(categoryList => this.categoryList = categoryList)
+
     }
+    initSwiper() {
+      const swiper = new Swiper('.swiper', {
+      direction: 'horizontal',
+      slidesPerView: 3,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+
+
+    });
+    }
+
 
 
 

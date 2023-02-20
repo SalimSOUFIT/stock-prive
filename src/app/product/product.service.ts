@@ -2,7 +2,7 @@ import { catchError, Observable, of, tap } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Product } from './product';
-import { Categorie } from './categorie';
+import { Category } from './category';
 
 
 @Injectable({
@@ -26,12 +26,12 @@ getProductList(): Observable<Product[]> {
   );
 }
 
-getCategorieList(): Observable<Categorie[]> {
+getCategoryList(): Observable<Category[]> {
   const httpOptions = {
     headers: new  HttpHeaders({ 'Content-Type': 'application/json' })
   };
 
-  return this.http.get<Categorie[]>('http://localhost:8890/product/sub-cat-to-json', httpOptions).pipe(
+  return this.http.get<Category[]>('http://localhost:8890/subCategoryRepository', httpOptions).pipe(
     tap((response) => console.table(response)),
     catchError((error) => {
       console.error(error);
