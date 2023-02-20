@@ -2,7 +2,6 @@ import { CATEGORIES } from './../../product/moc-category-list';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ProductService } from 'src/app/product/product.service';
-import Swiper from 'swiper';
 import { Category } from '../../product/category';
 @Component({
   selector: 'app-header',
@@ -30,20 +29,9 @@ export class HeaderComponent implements OnInit{
       //   .subscribe(categoryList => this.categoryList = categoryList)
 
     }
-    initSwiper() {
-      const swiper = new Swiper('.swiper', {
-      direction: 'horizontal',
-      slidesPerView: 3,
-      spaceBetween: 30,
-      loop: true,
-      autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
 
 
-    });
-    }
+
 
 
 
