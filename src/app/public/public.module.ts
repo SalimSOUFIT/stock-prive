@@ -6,6 +6,7 @@ import { FooterComponent } from "./footer/footer.component";
 import { HeaderComponent } from "./header/header.component";
 import { PublicRoutingModule } from './public-routing.module';
 import { CategoryCarouselComponent } from './category-carousel/category-carousel.component';
+import { SwiperModule } from 'swiper/angular';
 
 
 
@@ -21,6 +22,7 @@ import { CategoryCarouselComponent } from './category-carousel/category-carousel
     imports: [
         CommonModule,
         PublicRoutingModule,
+        SwiperModule
 
 
     ]

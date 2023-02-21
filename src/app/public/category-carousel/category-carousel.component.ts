@@ -12,16 +12,5 @@ import Swiper from 'swiper';
 export class CategoryCarouselComponent {
 
 
-  initSwiper() {
-    const swiper = new Swiper('.swiper-container', {
-      loop: true,
-      slidesPerView: 'auto',
-      spaceBetween: 16,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-    });
-  }
 
 }

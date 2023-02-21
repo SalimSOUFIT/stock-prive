@@ -41,7 +41,7 @@
     </div>
   </nav>
   <nav class="navbar navbar-expand-lg dpur">
-    <div class="dropdown">
+    <nav class="dropdown">
       <div style="display: flex; align-items: center;">
         <img src="../../../assets/home-images/dropDown.png" class="btn" data-bs-toggle="dropdown" style="width: 60px; margin-left: 40px;">
         <span class="btn" data-bs-toggle="dropdown" style="margin-left: -15px; color: white; margin-right: 100px; white-space: nowrap">Tous les produits</span>
@@ -52,17 +52,41 @@
           <li><hr class="dropdown-divider"></li>
           <li><a class="dropdown-item" href="#">Another link</a></li>
         </ul>
+
       </div>
+
 
       <!-- <img src="../../../assets/home-images/dropDown.png" class="btn dropdown-toggle" data-bs-toggle="dropdown" style="width: 60px; margin-left: 40px;" > -->
       <!-- <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
         Dropdown button
       </button> -->
 
-    </div>
+
+
+
+
+
+
 
 
   </nav>
+  <swiper
+      [slidesPerView]="6"
+      [spaceBetween]="10"
+      [allowSlideNext]="true"
+
+
+
+    >
+      <ng-template swiperSlide
+      *ngFor="let category of categoryList">
+        <span>{{category.name}}</span>
+      </ng-template>
+
+
+
+
+    </swiper>
 
 </nav>
 

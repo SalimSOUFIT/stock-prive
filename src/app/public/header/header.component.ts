@@ -1,19 +1,27 @@
 import { CATEGORIES } from './../../product/moc-category-list';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 import { ProductService } from 'src/app/product/product.service';
 import { Category } from '../../product/category';
+import SwiperCore, {  A11y, EffectFlip } from 'swiper';
+
+// install Swiper modules
+ SwiperCore.use([ EffectFlip]);
+
+
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class HeaderComponent implements OnInit{
   categoryList: Category[] = CATEGORIES;
     constructor(
       private router: Router,
       private productService: ProductService
-    ){}
+    ) { }
 
     goToProductList(){
       this.router.navigate(['products']);
@@ -29,6 +37,14 @@ export class HeaderComponent implements OnInit{
       //   .subscribe(categoryList => this.categoryList = categoryList)
 
     }
+    // const swiper = new Swiper('.swiper', {
+
+
+    // })
+
+
+
+
 
 
 

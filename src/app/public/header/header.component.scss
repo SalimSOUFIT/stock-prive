@@ -1,3 +1,11 @@
+
+@import 'swiper/scss';
+@import 'swiper/scss/navigation';
+@import 'swiper/scss/pagination';
+
+
+
+
 .nav-link {
   color: white; /* Remplacez "black" par la couleur de votre choix */
 }
@@ -29,6 +37,30 @@
   background-color: #000 ;
 }
 
-.swiper-slide {
-  color: #fa711c;
+.swiper{
+
+  margin: 'center';
+
 }
+
+.swiper-slide {
+  display: flex;
+  margin-top: 10px;
+  align-items: 'auto';
+  font-size: 15px;
+  font-weight: 14px;
+  color: orange;
+  background-color: black;
+  border-radius: 10px;
+  padding: 0 16px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.swiper-slide:hover {
+  transform: scale(1.1);
+}
+
+
+
+
