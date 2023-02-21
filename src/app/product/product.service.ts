@@ -31,7 +31,7 @@ getCategoryList(): Observable<Category[]> {
     headers: new  HttpHeaders({ 'Content-Type': 'application/json' })
   };
 
-  return this.http.get<Category[]>('http://localhost:8890/subCategoryRepository', httpOptions).pipe(
+  return this.http.get<Category[]>('http://localhost:8890/cat/all', httpOptions).pipe(
     tap((response) => console.table(response)),
     catchError((error) => {
       console.error(error);

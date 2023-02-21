@@ -1,12 +1,11 @@
-import { CATEGORIES } from './../../product/moc-category-list';
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 import { ProductService } from 'src/app/product/product.service';
 import { Category } from '../../product/category';
-import SwiperCore, {  Autoplay, EffectFlip } from 'swiper';
+import SwiperCore, {  Autoplay } from 'swiper';
 
 // install Swiper modules
- SwiperCore.use([ Autoplay,EffectFlip]);
+ SwiperCore.use([ Autoplay]);
 
 
 
@@ -17,7 +16,7 @@ import SwiperCore, {  Autoplay, EffectFlip } from 'swiper';
   encapsulation: ViewEncapsulation.None,
 })
 export class HeaderComponent implements OnInit{
-  categoryList: Category[] = CATEGORIES;
+  categoryList: Category[] | undefined;
     constructor(
       private router: Router,
       private productService: ProductService
@@ -32,7 +31,8 @@ export class HeaderComponent implements OnInit{
     }
 
     ngOnInit(){
-
+      this.productService.getCategoryList()
+      .subscribe(categoryList => this.categoryList = categoryList);
             // this.productService.getCategoryList()
       //   .subscribe(categoryList => this.categoryList = categoryList)
 
