@@ -3,10 +3,10 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 import { ProductService } from 'src/app/product/product.service';
 import { Category } from '../../product/category';
-import SwiperCore, {  A11y, EffectFlip } from 'swiper';
+import SwiperCore, {  Autoplay, EffectFlip } from 'swiper';
 
 // install Swiper modules
- SwiperCore.use([ EffectFlip]);
+ SwiperCore.use([ Autoplay,EffectFlip]);
 
 
 
