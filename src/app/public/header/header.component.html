@@ -75,15 +75,13 @@
       [spaceBetween]="10"
       [centeredSlides]="false"
       [loop]= "true"
+      [touchRatio]= 2
       [allowSlideNext]="true"
       [autoplay]="{
         delay: 2000,
         disableOnInteraction: false,
         waitForTransition: false
       }"
-
-
-
     >
       <ng-template swiperSlide
       *ngFor="let category of categoryList">

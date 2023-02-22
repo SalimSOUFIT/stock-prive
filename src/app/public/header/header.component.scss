@@ -36,15 +36,23 @@
 .dpur {
   background-color: #000 ;
 }
-
-.swiper{
-
-  margin: 'flex';
+@media screen and (max-width: 1565) {
+  .nav{
+    width: 90%;
+  }
+  .div{
+    width: 90%;
+  }
 
 }
+// .swiper{
+
+//   margin: 'flex';
+
+// }
 
 .swiper-slide {
-  display: flex;
+  // display: flex;
   margin-top: 0px;
   align-items: 'auto';
   font-size: 15px;
@@ -57,10 +65,23 @@
   transition: all 0.2s ease-in-out;
 }
 
-.swiper-slide:hover {
-  transform: scale(1.1);
-}
+// .swiper-slide:hover {
+//   transform: scale(1.1);
+// }
 
+// .spanS{
+//   display: flex;
+//   margin-top: 0px;
+//   align-items: 'auto';
+//   font-size: 15px;
+//   font-weight: 14px;
+//   color: orange;
+//   background-color: black;
+//   border-radius: 0px;
+//   padding: 0 16px;
+//   cursor: pointer;
+//   transition: all 0.2s ease-in-out;
+// }
 
 
 
