@@ -3,7 +3,6 @@ import { Router } from '@angular/router';
 import { ProductService } from 'src/app/product/product.service';
 import { Category } from '../../product/category';
 import SwiperCore, { Autoplay, EffectFlip } from 'swiper';
-import { CATEGORIES } from '../../product/moc-category-list';
 
 // install Swiper modules
  SwiperCore.use([Autoplay,EffectFlip]);
