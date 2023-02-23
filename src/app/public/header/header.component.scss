@@ -4,41 +4,87 @@
 @import 'swiper/scss/pagination';
 
 
-
-
-.nav-link {
-  color: white; /* Remplacez "black" par la couleur de votre choix */
+.sub-title-ul{
+  margin-top: 20px;
+  margin-left: 30px;
+  cursor: pointer;
 }
 
-.navbar-brand {
-  color: white; /* Remplacez "black" par la couleur de votre choix */
+.sub-title-li{
+  margin-left: 15px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
 }
 
-.my-title .navbar-brand{
-  font-size: 10 px;
-}
 
-.sub-title{
-  margin-top: 15px; margin-left: 30px;font-size: 20px;
-}
+.img-resize{
+  margin-left: 30px;
+  margin-top: 5px;
+  width: 230px;
 
-.imgResize{
-  margin-top: 5px; width: 230px; margin-left: 30px;margin-right: 20px;
 }
 
 .form-search-control {
-  width: 700px;
   margin-top: 15px;
+  margin-left: -90px;
+  width: 1000px;
+
 }
 
-/* #fa711c */
-.btn:hover {
-  background-color: #fa711c;
-  background-color: rgba(255, 165, 0, 0.5);
-}
-
-.dpur {
+.navbar {
   background-color: #000 ;
+}
+
+.btn{
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  color: #fa711c;
+  border-color: #fa711c;
+}
+
+.icon{
+
+  width: 35px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.icon-a{
+  margin-left: -150px;
+}
+
+.collapse {
+  margin-left: -30px;
+}
+
+.dropdown {
+  color: white;
+  margin-left: 5px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.dropIcon {
+  width: 18%;
+  margin-left: 45px;
+}
+
+.swiper {
+  margin-left: 35px;
+}
+.swiper-slide {
+  // display: flex;
+  margin-top: 0px;
+  align-items: 'auto';
+  font-size: 15px;
+  font-weight: 14px;
+  color: orange;
+  background-color: black;
+  border-radius: 0px;
+  padding: 0 16px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 @media screen and (max-width: 1562px) {
@@ -67,6 +113,7 @@
 
 
 }
+
 @media screen and (max-width: 1279) {
   .nav-link{
     width: 90%;
@@ -97,38 +144,8 @@
   }
 }
 
-.swiper-slide {
-  // display: flex;
-  margin-top: 0px;
-  align-items: 'auto';
-  font-size: 15px;
-  font-weight: 14px;
-  color: orange;
-  background-color: black;
-  border-radius: 0px;
-  padding: 0 16px;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-}
 
 
-// .swiper-slide:hover {
-//   transform: scale(1.1);
-// }
-
-// .spanS{
-//   display: flex;
-//   margin-top: 0px;
-//   align-items: 'auto';
-//   font-size: 15px;
-//   font-weight: 14px;
-//   color: orange;
-//   background-color: black;
-//   border-radius: 0px;
-//   padding: 0 16px;
-//   cursor: pointer;
-//   transition: all 0.2s ease-in-out;
-// }
 
 
 
