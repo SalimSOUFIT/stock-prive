@@ -3,10 +3,6 @@
 @import 'swiper/scss/navigation';
 @import 'swiper/scss/pagination';
 
-.collMe2{
-
-}
-
 .sub-title-ul{
   margin-top: 20px;
   margin-left: 30px;
@@ -30,7 +26,7 @@
 
 .form-search-control-resp {
   margin-top: 15px;
-  margin-left: -100px;
+  margin-left: 0px;
   width: 1000px;
 
 }
@@ -53,9 +49,6 @@
   width: 35px;
   margin-top: 10px;
   margin-left: 20px;
-}
-.icon-a{
-  margin-left: -150px;
 }
 
 .collapse {
@@ -92,15 +85,11 @@
 
 @media screen and (max-width: 1720px) {
   .form-search-control-resp {
-    margin-left: -100px;
+    margin-left: 50px;
     width: 600px;
 
   }
-  .sub-title-ul{
-    margin-top: 20px;
-    margin-left: 25px;
 
-  }
 
 
 
@@ -115,13 +104,14 @@
 
   }
   .sub-title-ul{
-    margin-top: 20px;
-    margin-left: 10px;
+    margin-top: 30px;
+    margin-left: 30px;
     cursor: pointer;
+    display: block;
   }
   .sub-title-li{
     margin-left: 10px;
-    font-size: 15px;
+    font-size: 18px;
   }
 
 
@@ -136,17 +126,50 @@
 }
 
 @media screen and (max-width: 992px) {
-  .collMe {
+  .container-fluid{
     &:not(.show) {
-      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+  }
+  .collapse {
+    &:not(.show) {
+      display: inline-block;
     }
   }
-}
-.collapse {
-  &:not(.show) {
-    display: block;
+  navbar-collapse{
+    &:not(.show) {
+      display: inline-block;
+
+
+    }
   }
+  .new {
+    &:not(.show) {
+      display: inline-block;
+      display: flex;
+      justify-content: end;
+      align-items: first baseline;
+      width: 200px;
+    }
+
+
+  }
+  .icon{
+    &:not(.show) {
+      justify-content: end;
+      align-items: first baseline;
+      width: 30px;
+      margin-top: 10px;
+      margin-left: 20px;
+    }
+
+  }
+
 }
+
 
 
 
