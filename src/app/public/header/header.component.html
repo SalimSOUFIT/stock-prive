@@ -4,7 +4,7 @@
 <nav>
   <nav class="navbar navbar-expand-lg">
 
-    <div class="container-fluid">
+    <div class="container-fluid f">
       <a class="navbar-brand logo" href="#">
         <img class="img-resize" src="../../../assets/home-images/logo.png" >
       </a>
@@ -33,7 +33,7 @@
         </form>
       </div>
 
-      <div class="navbar-collapse" id="navbarSupportedContent">
+      <div class="navbar-collapse icon-div" id="navbarSupportedContent">
         <a class="icon" href="#" >
           <img class="icon-img" src="../../../assets/home-images/user.png" style="width: 43px;">
         </a>
@@ -67,7 +67,7 @@
 
   </nav>
   <swiper
-    [slidesPerView]="7"
+    [slidesPerView]="isMobile ? 3 : 7"
     [spaceBetween]="10"
     [centeredSlides]="false"
     [loop]= "true"
@@ -78,6 +78,7 @@
       disableOnInteraction: false,
       waitForTransition: false
     }"
+
   >
     <ng-template *ngFor="let category of categoryList" swiperSlide >
         <span>{{category.name}}</span>

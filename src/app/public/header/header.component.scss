@@ -67,10 +67,11 @@
 }
 
 .swiper {
-  margin-left: 35px;
+  margin-left: 30px;
 }
 .swiper-slide {
-  // display: flex;
+  display: flex;
+  justify-content: space-evenly;
   margin-top: 0px;
   align-items: 'auto';
   font-size: 15px;
@@ -95,7 +96,7 @@
 @media screen and (max-width: 1450px) {
   .form-search-control-resp {
     margin-left: 50px;
-    width: 300px;
+    width: 450px;
 
   }
   .sub-title-ul{
@@ -124,54 +125,28 @@
 
   .container-fluid{
     &:not(.show) {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0.58em 16px 0;
+
 
     }
-
+  }
 
   .img-resize{
-    margin-top: 5px;
+
     width: 150px;
-    order: 2;
+    margin-top: -90px;
+    margin-left: 200px;
 
   }
 
-  .navbar navbar-expand-lg{
-    &:not(.show) {
-      display:flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      margin-left: 10px;
-      order: 2;
-    }
-  }
   .logo{
     order: 2;
   }
 
-  }
-
-  .collapse {
-    &:not(.show) {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-  }
-
-  navbar-collapse{
-    &:not(.show) {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-
-
-    }
-  }
 
   .sub-title-ul{
     display: none;
@@ -183,14 +158,11 @@
   .new {
     &:not(.show) {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: end;
-      margin-right: 5px;
-      order: 4;
+      align-items: center;
+      margin-top: -40px;
+      order: 3;
 
     }
-
-
   }
   .form-search-control-resp{
     flex-grow: 1;
@@ -200,12 +172,11 @@
   }
 
   .icon{
-    &:not(.show) {
-      margin-top: 5px;
       order: 1;
       margin-left: 0px;
-    }
-
+  }
+  .icon-div{
+    margin-top: -15px;
   }
   .btn{
     display: flex;
@@ -213,7 +184,23 @@
     width: 50px;
     line-height: 15px;
   }
-
+  .dropIcon{
+    width: 10%;
+    margin-left: 10px;
+  }
+  .swiper-slide {
+    // display: flex;
+    margin-top: 0px;
+    align-items: 'auto';
+    font-size: 10px;
+    font-weight: 14px;
+    color: orange;
+    background-color: black;
+    border-radius: 0px;
+    padding: 0 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
 
 }
 

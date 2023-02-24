@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, HostListener, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 import { ProductService } from 'src/app/product/product.service';
 import { Category } from '../../product/category';
@@ -22,6 +22,7 @@ export class HeaderComponent implements OnInit{
       private productService: ProductService
     ) { }
 
+    isMobile: boolean =  window.innerWidth < 992;;
     goToProductList(){
       this.router.navigate(['products']);
     }
@@ -38,10 +39,10 @@ export class HeaderComponent implements OnInit{
       //   .subscribe(categoryList => this.categoryList = categoryList)
 
     }
-    // const swiper = new Swiper('.swiper', {
-
-
-    // })
+    @HostListener('window:resize', ['$event'])
+    onResize(event: Event) {
+      this.isMobile = window.innerWidth < 992;
+    }
 
 
 
