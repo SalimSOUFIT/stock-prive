@@ -122,9 +122,21 @@
 
 @media screen and (max-width: 992px) {
 
+  .container-fluid{
+    &:not(.show) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+
   .img-resize{
     margin-top: 5px;
     width: 150px;
+    order: 2;
 
   }
 
@@ -134,17 +146,12 @@
       justify-content: space-between;
       flex-wrap: wrap;
       margin-left: 10px;
+      order: 2;
     }
   }
-
-  .container-fluid{
-    &:not(.show) {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-    }
+  .logo{
+    order: 2;
+  }
 
   }
 
@@ -159,6 +166,7 @@
   navbar-collapse{
     &:not(.show) {
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
 
 
@@ -178,7 +186,7 @@
       flex-wrap: wrap;
       justify-content: end;
       margin-right: 5px;
-      order: 2;
+      order: 4;
 
     }
 
@@ -193,11 +201,9 @@
 
   .icon{
     &:not(.show) {
-      display: flex;
-      width: 30px;
       margin-top: 5px;
-      margin-left: 10px;
       order: 1;
+      margin-left: 0px;
     }
 
   }
