@@ -151,21 +151,32 @@
       display: inline-block;
       display: flex;
       justify-content: end;
+      margin-right: 5px;
       align-items: first baseline;
-      width: 200px;
+
     }
 
 
   }
+  .form-search-control-resp{
+    width: 200px;
+  }
+
   .icon{
     &:not(.show) {
       justify-content: end;
       align-items: first baseline;
       width: 30px;
-      margin-top: 10px;
+      margin-top: 5px;
       margin-left: 20px;
     }
 
+  }
+  .btn{
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    line-height: 15px;
   }
   .sub-title-li{
     display: none;
