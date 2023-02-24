@@ -90,11 +90,6 @@
 
   }
 
-
-
-
-
-
 }
 
 @media screen and (max-width: 1450px) {
@@ -126,6 +121,12 @@
 }
 
 @media screen and (max-width: 992px) {
+  .navbar navbar-expand-lg{
+    &:not(.show) {
+      display:inline-flex;
+      margin-left: 10px;
+    }
+  }
   .container-fluid{
     &:not(.show) {
       display: flex;
@@ -136,20 +137,19 @@
   }
   .collapse {
     &:not(.show) {
-      display: inline-block;
+      display: inline-flex;
     }
   }
   navbar-collapse{
     &:not(.show) {
-      display: inline-block;
+      display: inline-flex;
 
 
     }
   }
   .new {
     &:not(.show) {
-      display: inline-block;
-      display: flex;
+      display: inline-flex;
       justify-content: end;
       margin-right: 5px;
       align-items: first baseline;
