@@ -22,7 +22,9 @@ export class HeaderComponent implements OnInit{
       private productService: ProductService
     ) { }
 
-    isMobile: boolean =  window.innerWidth < 992;;
+    isMobile: boolean =  window.innerWidth < 992;
+
+
     goToProductList(){
       this.router.navigate(['products']);
     }
@@ -34,11 +36,8 @@ export class HeaderComponent implements OnInit{
     ngOnInit(){
       this.productService.getCategoryList()
       .subscribe(categoryList => this.categoryList = categoryList);
-
-            // this.productService.getCategoryList()
-      //   .subscribe(categoryList => this.categoryList = categoryList)
-
     }
+
     @HostListener('window:resize', ['$event'])
     onResize(event: Event) {
       this.isMobile = window.innerWidth < 992;
