@@ -33,18 +33,17 @@
   </button>
 </div>
 
-<div class="product-card">
+<div (click)="goToProductDetail()" class="product-card">
+  <div class="product-price">
+    <span class="price-regular">$100.00</span>
+    <span class="price-discount">$90.00</span>
+  </div>
   <div class="product-image">
     <img src="image.jpg" alt="Product Image">
   </div>
   <div class="product-info">
     <h2 class="product-name">Product Name</h2>
     <p class="product-description">Product Description</p>
-    <div class="product-price">
-      <span class="price-regular">$100.00</span>
-      <span class="price-discount">$90.00</span>
-    </div>
-    <button class="product-button">Add to Cart</button>
   </div>
 </div>
 

@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { Category } from '../../product/category';
 import { ProductService } from 'src/app/product/product.service';
@@ -11,7 +12,8 @@ import { ProductService } from 'src/app/product/product.service';
 export class HomeComponent implements OnInit{
   categoryList: Category[] | undefined;
   constructor(
-    private productService: ProductService
+    private productService: ProductService,
+    private router: Router
   ) { }
 
   ngOnInit(){
@@ -19,5 +21,8 @@ export class HomeComponent implements OnInit{
     // .subscribe(categoryList => this.categoryList = categoryList);
   }
 
+  goToProductDetail(){
+    this.router.navigate(['Product/'])
+  }
 
 }
