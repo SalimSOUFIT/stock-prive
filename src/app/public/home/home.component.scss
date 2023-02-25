@@ -44,16 +44,17 @@
   font-size: 20px;
   font-weight: bold;
   margin: 10px 0;
+  background-color: #ccc;
 }
 
 .price-regular {
   margin-right: 10px;
   text-decoration: line-through;
-  color: #999;
+  color: black;
 }
 
 .price-discount {
-  color: #007bff;
+  color: orange;
 }
 
 .product-button {
