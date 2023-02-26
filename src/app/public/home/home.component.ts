@@ -2,6 +2,10 @@ import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { Category } from '../../product/category';
 import { ProductService } from 'src/app/product/product.service';
+import SwiperCore, {EffectFlip, SwiperOptions} from 'swiper';
+
+// install Swiper modules
+ SwiperCore.use([EffectFlip]);
 
 
 @Component({
@@ -24,5 +28,12 @@ export class HomeComponent implements OnInit{
   goToProductDetail(){
     this.router.navigate(['Product/'])
   }
+
+  config: SwiperOptions = {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    navigation: true,
+    loop: true,
+  };
 
 }
