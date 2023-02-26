@@ -25,9 +25,9 @@ export class HomeComponent implements OnInit{
     // .subscribe(categoryList => this.categoryList = categoryList);
   }
 
-  // goToProductDetail(){
-  //   this.router.navigate(['Product/'])
-  // }
+  goToProductDetail(){
+    this.router.navigate(['Product/'])
+  }
 
   config: SwiperOptions = {
     slidesPerView: 3,
