@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Category } from '../../product/category';
 import { ProductService } from 'src/app/product/product.service';
 import SwiperCore, {EffectFlip, SwiperOptions} from 'swiper';
+import Swiper from 'swiper';
 
 // install Swiper modules
  SwiperCore.use([EffectFlip]);
@@ -29,14 +30,17 @@ export class HomeComponent implements OnInit{
     this.router.navigate(['Product/'])
   }
 
-  config: SwiperOptions = {
-    slidesPerView: 3,
-    spaceBetween: 10,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper.button-prev",
-    },
-    loop: true,
-  };
-
+  // config: SwiperOptions = {
+  //   slidesPerView: 3,
+  //   spaceBetween: 10,
+  //   navigation: {
+  //     nextEl: ".swiper-button-next",
+  //     prevEl: ".swiper.button-prev",
+  //   },
+  //   loop: true,
+  // };
+  swiper = new Swiper(".slide-content", {
+    slidesPerView: 4,
+    spaceBetween: 30
+  });
 }
