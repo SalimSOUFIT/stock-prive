@@ -39,8 +39,4 @@ export class HomeComponent implements OnInit{
   //   },
   //   loop: true,
   // };
-  // swiper = new Swiper(".slide-content", {
-  //   slidesPerView: 4,
-  //   spaceBetween: 30
-  // });
 }
