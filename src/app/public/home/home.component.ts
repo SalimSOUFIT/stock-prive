@@ -30,13 +30,10 @@ export class HomeComponent implements OnInit{
     this.router.navigate(['Product/'])
   }
 
-  // config: SwiperOptions = {
-  //   slidesPerView: 3,
-  //   spaceBetween: 10,
-  //   navigation: {
-  //     nextEl: ".swiper-button-next",
-  //     prevEl: ".swiper.button-prev",
-  //   },
-  //   loop: true,
-  // };
+  config: SwiperOptions = {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    navigation: true,
+    loop: true,
+  };
 }

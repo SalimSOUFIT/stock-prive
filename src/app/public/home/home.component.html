@@ -221,58 +221,48 @@
 </div> -->
 
 
-<swiper>
 
-  <ng-template swiperSlide>
-    <div>
-      <div (click)="goToProductDetail()" class="product-card">
-        <div class="product-price">
-          <span class="price-regular">$100.00</span>
-          <span class="price-discount">$90.00</span>
-        </div>
-        <div class="product-image">
-          <img src="../../../assets/home-images/s21.jpg" class="product-img" alt="Product Image">
-        </div>
-        <div class="product-info">
-          <h2 class="product-name">Galaxy S21 5G</h2>
-          <p class="product-description">256-go-violet-debloque-tout-operateur</p>
+
+<body>
+  <swiper [config]="config" style='background: green'>
+
+    <ng-template swiperSlide >
+      <div >
+        <div (click)="goToProductDetail()" class="product-card">
+          <div class="product-price">
+            <span class="price-regular">$100.00</span>
+            <span class="price-discount">$90.00</span>
+          </div>
+          <div class="product-image">
+            <img src="../../../assets/home-images/s21.jpg" class="product-img" alt="Product Image">
+          </div>
+          <div class="product-info">
+            <h2 class="product-name">Galaxy S21 5G</h2>
+            <p class="product-description">256-go-violet-debloque-tout-operateur</p>
+          </div>
         </div>
       </div>
-    </div>
+    </ng-template>
 
-    <div>
-      <div (click)="goToProductDetail()" class="product-card">
-        <div class="product-price">
-          <span class="price-regular">$100.00</span>
-          <span class="price-discount">$90.00</span>
-        </div>
-        <div class="product-image">
-          <img src="../../../assets/home-images/s21.jpg" class="product-img" alt="Product Image">
-        </div>
-        <div class="product-info">
-          <h2 class="product-name">Galaxy S21 5G</h2>
-          <p class="product-description">256-go-violet-debloque-tout-operateur</p>
+    <ng-template swiperSlide>
+      <div swiperSlide>
+        <div (click)="goToProductDetail()" class="product-card">
+          <div class="product-price">
+            <span class="price-regular">$100.00</span>
+            <span class="price-discount">$90.00</span>
+          </div>
+          <div class="product-image">
+            <img src="../../../assets/home-images/s21.jpg" class="product-img" alt="Product Image">
+          </div>
+          <div class="product-info">
+            <h2 class="product-name">Galaxy S21 5G</h2>
+            <p class="product-description">256-go-violet-debloque-tout-operateur</p>
+          </div>
         </div>
       </div>
-    </div>
+    </ng-template>
 
-    <div>
-      <div (click)="goToProductDetail()" class="product-card">
-        <div class="product-price">
-          <span class="price-regular">$100.00</span>
-          <span class="price-discount">$90.00</span>
-        </div>
-        <div class="product-image">
-          <img src="../../../assets/home-images/s21.jpg" class="product-img" alt="Product Image">
-        </div>
-        <div class="product-info">
-          <h2 class="product-name">Galaxy S21 5G</h2>
-          <p class="product-description">256-go-violet-debloque-tout-operateur</p>
-        </div>
-      </div>
-    </div>
-  </ng-template>
 
-</swiper>
-
+  </swiper>
+</body>
 
