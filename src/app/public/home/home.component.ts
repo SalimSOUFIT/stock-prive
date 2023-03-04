@@ -1,5 +1,5 @@
 import { Router } from '@angular/router';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Category } from '../../product/category';
 import { ProductService } from 'src/app/product/product.service';
 import SwiperCore, {EffectFlip, SwiperOptions} from 'swiper';
@@ -12,7 +12,8 @@ import Swiper from 'swiper';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class HomeComponent implements OnInit{
   categoryList: Category[] | undefined;
@@ -34,6 +35,6 @@ export class HomeComponent implements OnInit{
     slidesPerView: 3,
     spaceBetween: 30,
     navigation: true,
-    loop: true,
+
   };
 }

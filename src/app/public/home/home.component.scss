@@ -1,6 +1,6 @@
 .product-card {
   border-radius: 25px;
-  background-color: #fff;
+  background-color: grey;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,10 +11,7 @@
   row-gap: 5px;
 }
 
-.swiperCard{
-  margin: 0 40px;
-  background: #fff;
-}
+
 .product-image {
   position: relative;
   height: 150px;
@@ -23,7 +20,6 @@
   background: #fff;
 }
 
-
 .product-image .product-img{
   height: 100%;
   width: 100%;
@@ -31,6 +27,7 @@
   object-fit: cover;
   border: 4px solid orange;
 }
+
 .product-info {
   padding: 20px;
   display: flex;
@@ -102,7 +99,7 @@
 }
 
 .swiperSlide{
-  max-width: 1120px;
+  width: 100px;
   background-color: grey;
   padding: 40px 0;
 }
