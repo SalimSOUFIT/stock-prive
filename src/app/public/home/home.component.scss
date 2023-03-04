@@ -3,35 +3,35 @@
 @import 'swiper/scss/pagination';
 @import 'swiper/css/effect-cards';
 
-.product-card {
-  margin: 10px;
-  border-radius: 25px;
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 250px;
-  height: 300px;
-  padding: 10px 14px;
-  cursor: pointer;
-  row-gap: 5px;
-}
+// .product-card {
+//   margin: 10px;
+//   border-radius: 25px;
+//   background-color: #fff;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   width: 250px;
+//   height: 300px;
+//   padding: 10px 14px;
+//   cursor: pointer;
+//   row-gap: 5px;
+// }
 
 
-.product-image {
-  position: relative;
-  height: 120px;
-  width: 120px;
-  border-radius: 50%;
-}
+// .product-image {
+//   position: relative;
+//   height: 120px;
+//   width: 120px;
+//   border-radius: 50%;
+// }
 
-.product-image .product-img{
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid orange;
-}
+// .product-image .product-img{
+//   height: 100%;
+//   width: 100%;
+//   border-radius: 50%;
+//   object-fit: cover;
+//   border: 4px solid orange;
+// }
 
 .product-info {
   padding: 20px;
