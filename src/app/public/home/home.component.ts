@@ -13,7 +13,6 @@ import Swiper from 'swiper';
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
-  encapsulation: ViewEncapsulation.None
 })
 export class HomeComponent implements OnInit{
   categoryList: Category[] | undefined;
@@ -33,7 +32,7 @@ export class HomeComponent implements OnInit{
 
   config: SwiperOptions = {
     slidesPerView: 3,
-    spaceBetween: 30,
+    spaceBetween: 10,
     navigation: true,
 
   };
