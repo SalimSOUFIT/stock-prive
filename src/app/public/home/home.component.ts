@@ -2,11 +2,11 @@ import { Router } from '@angular/router';
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Category } from '../../product/category';
 import { ProductService } from 'src/app/product/product.service';
-import SwiperCore, {EffectFlip, SwiperOptions} from 'swiper';
-import Swiper from 'swiper';
+import SwiperCore, {EffectCards, SwiperOptions, } from 'swiper';
+
 
 // install Swiper modules
- SwiperCore.use([EffectFlip]);
+ SwiperCore.use([EffectCards]);
 
 
 @Component({
