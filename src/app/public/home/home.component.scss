@@ -55,23 +55,22 @@
 }
 
 .product-price {
-
+  display: flex;
+  justify-content: space-evenly;
   font-size: 20px;
   font-weight: bold;
   width: 50%;
-  margin-top: 15px;
-  margin-left: 15px;
-  // background-color: #ccc;
+
 }
 
 .price-regular {
-  margin-right: 10px;
   text-decoration: line-through;
   color: black;
   // background-color: grey !important;
 }
 
 .price-discount {
+  margin-left: 10px;
   color: orange;
 }
 
