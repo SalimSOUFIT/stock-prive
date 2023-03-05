@@ -223,7 +223,9 @@
 
 
 
-<swiper [config]="config">
+<swiper [config]="config"
+  [slidesPerView]="3"
+>
 
   <ng-template swiperSlide>
 
@@ -244,7 +246,7 @@
   </ng-template>
 
   <ng-template swiperSlide>
-      <div swiperSlide>
+
         <div (click)="goToProductDetail()" class="product-card">
           <div class="product-price">
             <span class="price-regular">$100.00</span>
@@ -258,11 +260,11 @@
             <p class="product-description">256-go-violet-debloque-tout-operateur</p>
           </div>
         </div>
-      </div>
+
   </ng-template>
 
   <ng-template swiperSlide>
-      <div swiperSlide>
+
         <div (click)="goToProductDetail()" class="product-card">
           <div class="product-price">
             <span class="price-regular">$100.00</span>
@@ -276,11 +278,11 @@
             <p class="product-description">256-go-violet-debloque-tout-operateur</p>
           </div>
         </div>
-      </div>
+
   </ng-template>
 
   <ng-template swiperSlide>
-      <div swiperSlide>
+
         <div (click)="goToProductDetail()" class="product-card">
           <div class="product-price">
             <span class="price-regular">$100.00</span>
@@ -294,11 +296,11 @@
             <p class="product-description">256-go-violet-debloque-tout-operateur</p>
           </div>
         </div>
-      </div>
+
   </ng-template>
 
   <ng-template swiperSlide>
-      <div swiperSlide>
+
         <div (click)="goToProductDetail()" class="product-card">
           <div class="product-price">
             <span class="price-regular">$100.00</span>
@@ -312,7 +314,7 @@
             <p class="product-description">256-go-violet-debloque-tout-operateur</p>
           </div>
         </div>
-      </div>
+
   </ng-template>
 
 
