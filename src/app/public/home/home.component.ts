@@ -34,6 +34,6 @@ export class HomeComponent implements OnInit{
     slidesPerView: 3,
     spaceBetween: 10,
     navigation: true,
-
+    slideClass: 'my-slide'
   };
 }
