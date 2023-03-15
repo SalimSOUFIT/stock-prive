@@ -32,8 +32,10 @@ export class HomeComponent implements OnInit{
 
   config: SwiperOptions = {
     slidesPerView: 3,
-    spaceBetween: 10,
+    spaceBetween: 100,
     navigation: true,
-    slideClass: 'my-slide'
+    // slideClass: 'my-slide'
+
   };
+
 }

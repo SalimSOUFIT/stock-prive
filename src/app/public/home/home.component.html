@@ -224,10 +224,11 @@
 
 
 <swiper [config]="config"
-  [slidesPerView]="3"
+
+
 >
 
-  <ng-template swiperSlide>
+  <ng-template swiperSlide class="my-swiper">
 
         <div (click)="goToProductDetail()" class="product-card">
           <div class="product-price">
@@ -319,5 +320,6 @@
 
 
 </swiper>
+
 
 

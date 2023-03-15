@@ -82,10 +82,11 @@
 
 .ng-template{
   max-width: 1120px;
+  background-color: grey !important;
   padding: 40px 0;
 }
 
-// .my-slide{
-//   background-color: grey;
-// }
+.swiper-slide{
+  background-color: transparent !important;
+}
 
